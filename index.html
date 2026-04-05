@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Trang cá nhân</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* CARD */
+.card{
+    background:white;
+    width:350px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+    overflow:hidden;
+    text-align:center;
+    animation: fadeIn 1s ease;
+}
+
+/* ẢNH */
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-top:-60px;
+    object-fit:cover;
+}
+
+/* HEADER */
+.top{
+    height:120px;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+}
+
+/* CONTENT */
+.content{
+    padding:20px;
+}
+
+h2{
+    margin:10px 0;
+}
+
+.info{
+    text-align:left;
+    margin-top:15px;
+    line-height:1.8;
+}
+
+.info p{
+    border-bottom:1px solid #eee;
+    padding:5px 0;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:linear-gradient(45deg, #ff6a00, #ee0979);
+    color:white;
+    border-radius:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* FOOTER */
+.footer{
+    background:#f1f1f1;
+    padding:10px;
+    font-size:14px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    
+    <div class="top"></div>
+    
+    <img src="buihungthinh.jpeg" class="avatar">
+
+    <div class="content">
+        <h2>Bùi Hưng Thịnh</h2>
+        <p>✨ Student | Sports Lover</p>
+
+        <div class="info">
+            <p>👤 Giới tính: Nam</p>
+            <p>🎂 Ngày sinh: 29/07/2008</p>
+            <p>🏫 THPT Số 1 Nguyễn Huệ</p>
+            <p>⚽ Sở thích: Thể thao</p>
+        </div>
+
+        <a href="#" class="btn">Liên hệ</a>
+    </div>
+
+    <div class="footer">
+        📞 0352246499 | 📧 buihungthinhtt@gmail.com
+    </div>
+
+</div>
+
+</body>
+</html>
